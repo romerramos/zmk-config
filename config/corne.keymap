@@ -46,7 +46,7 @@
         TMUX: TMUX {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LCTRL &kp B &tog 3>;
+            bindings = <&kp LC(B) &tog 3>;
             label = "TMUX";
         };
     };

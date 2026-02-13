@@ -38,7 +38,16 @@
             compatible = "zmk,behavior-tap-dance";
             label = "LGUI_TMUX_DTAP";
             #binding-cells = <0>;
-            bindings = <&kp LEFT_GUI>, <&mo 3>;
+            bindings = <&kp LEFT_GUI>, <&TMUX>;
+        };
+    };
+
+    macros {
+        TMUX: TMUX {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LCTRL &kp B &tog 3>;
+            label = "TMUX";
         };
     };
 

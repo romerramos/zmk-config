@@ -9,9 +9,7 @@
 #include <dt-bindings/zmk/keys.h>
 
 / {
-    &sl {
-        release-after-ms = <3000>;
-    };
+    &sl { release-after-ms = <3000>; };
 
     behaviors {
         HOME_ROW_R: HOME_ROW_R {
